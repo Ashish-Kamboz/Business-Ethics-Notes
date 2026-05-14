@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+
+<html data-theme="light" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ashish — Business Ethics Exam Notes</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&amp;family=Instrument+Serif:ital@0;1&amp;display=swap" rel="stylesheet"/>
+<style>
+:root{--paper:#f6f4ee;--ink:#101010;--muted:#66615a;--line:#d8d1c4;--soft:#ebe6db;--card:#fffdf8;--inverse:#101010;--inverseText:#f6f4ee;--blue:#2457ff;--purple:#6b45d8;--green:#168457;--orange:#d97706;--pink:#e64980;--shadow:0 22px 60px rgba(16,16,16,.08)}
+html[data-theme="dark"]{--paper:#0b0d12;--ink:#f4f1e8;--muted:#aaa49a;--line:#2b2b2b;--soft:#15171d;--card:#11141b;--inverse:#f4f1e8;--inverseText:#101010;--shadow:0 22px 60px rgba(0,0,0,.32)}
+*{box-sizing:border-box;margin:0;padding:0} html{scroll-behavior:smooth;scroll-padding-top:92px} body{background:var(--paper);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.55;overflow-x:hidden;transition:background .25s,color .25s} a{color:inherit;text-decoration:none} button,input{font:inherit} ::selection{background:var(--ink);color:var(--paper)}
+.progress{position:fixed;left:0;top:0;width:0;height:3px;background:var(--orange);z-index:200}
+.header{position:sticky;top:0;z-index:100;height:76px;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(18px);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 clamp(18px,4vw,56px)}
+.logo{display:flex;align-items:center;gap:12px;font-weight:900;letter-spacing:-.045em;font-size:22px} .logo-mark{width:36px;height:36px;border-radius:50%;background:var(--ink);color:var(--paper);display:grid;place-items:center;font-size:13px;font-weight:900;letter-spacing:-.05em} .logo-sub{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:var(--muted);font-weight:800;margin-top:-3px}
+.nav{display:flex;align-items:center;gap:26px;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.06em} .nav a{position:relative;padding:28px 0} .nav a:after{content:"";position:absolute;left:0;right:0;bottom:20px;height:2px;background:var(--ink);transform:scaleX(0);transform-origin:right;transition:.24s} .nav a:hover:after,.nav a.active:after{transform:scaleX(1);transform-origin:left}
+.actions{display:flex;align-items:center;gap:10px} .btn{border:1px solid var(--ink);background:transparent;color:var(--ink);border-radius:999px;padding:10px 15px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;transition:.22s} .btn:hover{background:var(--ink);color:var(--paper)} .icon-btn{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--ink);background:transparent;color:var(--ink);cursor:pointer;font-weight:900} .hamb{display:none}
+.mobile-panel{position:fixed;inset:0 0 auto 0;background:var(--ink);color:var(--paper);z-index:180;min-height:100vh;transform:translateY(-105%);transition:.34s cubic-bezier(.2,.9,.2,1);padding:24px} .mobile-panel.open{transform:translateY(0)} .mobile-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:36px} .mobile-panel a{display:flex;justify-content:space-between;align-items:center;font-size:36px;font-weight:900;letter-spacing:-.06em;padding:14px 0;border-bottom:1px solid rgba(255,255,255,.16)} .mobile-panel span{font-size:14px;letter-spacing:.1em;color:#aaa;text-transform:uppercase}
+.searchbar{position:fixed;top:88px;left:50%;transform:translateX(-50%) translateY(-18px);opacity:0;pointer-events:none;z-index:160;width:min(740px,92vw);background:var(--card);border:1px solid var(--ink);box-shadow:var(--shadow);border-radius:28px;overflow:hidden;transition:.2s} .searchbar.open{opacity:1;pointer-events:auto;transform:translateX(-50%) translateY(0)} .searchbar input{width:100%;border:0;background:transparent;color:var(--ink);outline:0;padding:20px 24px;font-size:18px} .results{border-top:1px solid var(--line);max-height:330px;overflow:auto;display:none} .result{padding:14px 24px;border-bottom:1px solid var(--line);cursor:pointer;display:flex;justify-content:space-between;gap:20px} .result:hover{background:var(--soft)} .result small{color:var(--muted);font-size:11px;text-transform:uppercase;font-weight:900}
+.wrap{max-width:1520px;margin:0 auto;padding:0 clamp(18px,4vw,56px)} .hero{padding:66px 0 34px;border-bottom:1px solid var(--line)} .kicker{display:flex;gap:12px;align-items:center;color:var(--muted);font-size:13px;text-transform:uppercase;font-weight:900;letter-spacing:.09em;margin-bottom:26px} .kicker:before{content:"";width:38px;height:2px;background:var(--ink)} .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:end} h1{font-size:clamp(62px,11vw,164px);line-height:.86;letter-spacing:-.085em;font-weight:900;max-width:980px} .serif{font-family:"Instrument Serif",serif;font-weight:400;font-style:italic;letter-spacing:-.035em} .hero-copy{font-size:18px;color:var(--muted);max-width:540px;margin-top:28px} .cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
+.hero-art{aspect-ratio:1.05/1;border:1px solid var(--ink);background:var(--inverse);color:var(--inverseText);position:relative;overflow:hidden;box-shadow:var(--shadow)} .hero-art:before{content:"";position:absolute;inset:-22%;background:radial-gradient(circle at 20% 22%,rgba(36,87,255,.9),transparent 28%),radial-gradient(circle at 82% 32%,rgba(230,73,128,.75),transparent 30%),radial-gradient(circle at 46% 90%,rgba(22,132,87,.82),transparent 28%);filter:blur(22px);opacity:.85} .hero-art svg{position:absolute;inset:0;width:100%;height:100%;opacity:.40} .hero-art-content{position:absolute;left:0;right:0;bottom:0;padding:28px;background:linear-gradient(transparent,rgba(0,0,0,.78));color:#fff} .hero-art h2{font-size:42px;letter-spacing:-.055em;line-height:.92} .score{position:absolute;top:18px;right:18px;width:74px;height:74px;border:1px solid rgba(255,255,255,.72);border-radius:50%;display:grid;place-items:center;color:#fff;font-size:20px;font-weight:900;background:rgba(0,0,0,.22);backdrop-filter:blur(8px)}
+.meta-row{display:grid;grid-template-columns:repeat(4,1fr);border-bottom:1px solid var(--line)} .meta{padding:22px 0;border-right:1px solid var(--line)} .meta:last-child{border-right:0} .meta small{display:block;color:var(--muted);font-size:11px;text-transform:uppercase;font-weight:900;letter-spacing:.09em;margin-bottom:7px} .meta b{font-size:26px;letter-spacing:-.05em}
+.section{padding:66px 0;border-bottom:1px solid var(--line)} .section-title{display:grid;grid-template-columns:.36fr 1fr;gap:34px;align-items:start;margin-bottom:28px} .eyebrow{font-size:13px;text-transform:uppercase;font-weight:900;letter-spacing:.1em;color:var(--muted)} h2{font-size:clamp(42px,7vw,92px);line-height:.9;letter-spacing:-.07em;font-weight:900} .lead{font-size:18px;color:var(--muted);max-width:760px;margin-top:16px}
+.unit-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px} .unit-card{min-height:310px;border:1px solid var(--ink);background:var(--card);padding:22px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden;transition:.24s} .unit-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)} .unit-card:before{content:"";position:absolute;right:-44px;top:-44px;width:126px;height:126px;border-radius:50%;background:var(--accent);opacity:.13} .unit-card .unit-num{font-size:82px;font-weight:900;line-height:.82;letter-spacing:-.09em;color:var(--accent)} .unit-card h3{font-size:28px;line-height:1;letter-spacing:-.055em;margin:18px 0 10px} .unit-card p{color:var(--muted);font-size:14px} .blue{--accent:var(--blue)} .purple{--accent:var(--purple)} .green{--accent:var(--green)} .orange{--accent:var(--orange)}
+.unit-section{padding:66px 0;border-bottom:1px solid var(--line)} .unit-section .section-title{grid-template-columns:1fr 360px;align-items:end} .unit-visual{height:220px;border:1px solid var(--ink);background:var(--inverse);position:relative;overflow:hidden;display:grid;place-items:end start;padding:22px;color:#fff} .unit-visual:before{content:"";position:absolute;inset:-20%;background:radial-gradient(circle at 20% 20%,var(--accent),transparent 32%),radial-gradient(circle at 84% 74%,#fff,transparent 28%);filter:blur(18px);opacity:.48} .unit-visual span{position:relative;font-size:34px;font-weight:900;letter-spacing:-.06em} .subnav{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 22px} .subnav a{border:1px solid var(--line);background:var(--card);border-radius:999px;padding:8px 12px;font-size:12px;font-weight:800;color:var(--muted)} .subnav a:hover{border-color:var(--ink);color:var(--ink)}
+.topic-list{display:grid;gap:12px} .topic{border:1px solid var(--ink);background:var(--card)} .topic-head{width:100%;border:0;background:transparent;color:var(--ink);display:flex;justify-content:space-between;gap:22px;align-items:center;text-align:left;padding:20px;cursor:pointer} .topic-title{font-size:28px;line-height:1;letter-spacing:-.05em;font-weight:900} .topic-action{min-width:84px;text-align:center;border:1px solid var(--ink);border-radius:999px;padding:8px 12px;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.06em} .topic.open .topic-action{background:var(--ink);color:var(--paper)} .topic-body{display:none;padding:0 20px 22px} .topic.open .topic-body{display:block}
+.definition{border-left:4px solid var(--ink);background:var(--soft);padding:16px 18px;font-size:17px;margin-bottom:14px} .definition span{display:block;font-size:11px;text-transform:uppercase;font-weight:900;letter-spacing:.09em;color:var(--muted);margin-bottom:6px} .easy,.example,.answer{border-top:1px solid var(--line);padding:14px 0;color:var(--muted)} .easy b,.example b{color:var(--ink)} .points{padding:14px 0;border-top:1px solid var(--line)} .points h4,.answer h4{font-size:13px;text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px} .points ul{columns:2;column-gap:32px;padding-left:18px} .points li{break-inside:avoid;margin:7px 0;color:color-mix(in srgb,var(--ink) 82%,var(--muted))} .table-wrap{overflow:auto;margin:14px 0;border:1px solid var(--line)} table{width:100%;border-collapse:collapse;min-width:680px} th,td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top} th{font-size:12px;text-transform:uppercase;letter-spacing:.08em} tr:last-child td{border-bottom:0} .keywords{display:flex;gap:7px;flex-wrap:wrap;margin-top:12px} .keywords span{border:1px solid var(--line);border-radius:999px;padding:6px 10px;font-size:11px;text-transform:uppercase;font-weight:800;color:var(--muted)} .copy{border:1px solid var(--ink);background:transparent;color:var(--ink);padding:10px 13px;margin-top:12px;font-size:12px;font-weight:900;text-transform:uppercase;cursor:pointer} .copy:hover{background:var(--ink);color:var(--paper)} .copy.small{padding:8px 11px}
+.question-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px} .question-card{border:1px solid var(--ink);background:var(--card);padding:18px;min-height:160px;display:flex;flex-direction:column;justify-content:space-between} .question-card small{font-size:11px;text-transform:uppercase;font-weight:900;color:var(--orange);letter-spacing:.08em} .question-card p{font-size:20px;font-weight:800;line-height:1.1;letter-spacing:-.04em;margin-top:10px}
+.formula{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--ink);background:var(--card)} .formula div{padding:18px;border-right:1px solid var(--line)} .formula div:last-child{border-right:0} .formula b{display:block;font-size:24px;letter-spacing:-.05em;margin-bottom:8px} .formula p{color:var(--muted);font-size:14px} .footer{padding:44px 0;display:flex;justify-content:space-between;gap:20px;color:var(--muted);font-size:13px} .back{position:fixed;right:22px;bottom:22px;width:46px;height:46px;border-radius:50%;border:1px solid var(--ink);background:var(--paper);color:var(--ink);display:none;place-items:center;cursor:pointer;z-index:90} .back.show{display:grid}
+@media(max-width:1120px){.nav{display:none}.hamb{display:grid}.hero-grid,.section-title,.unit-section .section-title{grid-template-columns:1fr}.unit-grid,.question-grid{grid-template-columns:repeat(2,1fr)}.points ul{columns:1}.formula{grid-template-columns:1fr 1fr}.formula div{border-bottom:1px solid var(--line)}}
+@media(max-width:680px){.header{height:68px}.logo{font-size:18px}.actions .btn{display:none}h1{font-size:66px}h2{font-size:48px}.unit-grid,.question-grid,.formula{grid-template-columns:1fr}.meta-row{grid-template-columns:1fr}.meta{border-right:0;border-bottom:1px solid var(--line)}.topic-title{font-size:22px}.topic-head{padding:16px}.unit-visual{height:150px}.hero-art{margin-top:8px}.footer{display:block}.footer div{margin-bottom:8px}.mobile-panel a{font-size:30px}}
+@media print{.header,.mobile-panel,.searchbar,.progress,.back,.subnav,.cta,.actions{display:none!important}body{background:#fff;color:#000}.topic-body{display:block!important}.topic,.unit-card,.question-card,.formula{page-break-inside:avoid;box-shadow:none}.wrap{padding:0 18px}}
+
+/* ===== CLEAN DETAIL UPDATE ===== */
+.hamb{display:grid!important;font-size:18px}.mobile-actions{display:grid;gap:12px;margin-top:28px}.mobile-action-btn{border:1px solid rgba(255,255,255,.55);background:transparent;color:#fff;border-radius:999px;padding:14px 18px;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}.mobile-action-btn:hover{background:#fff;color:#000}.detail-block{border-top:1px solid var(--line);padding:15px 0;color:color-mix(in srgb,var(--ink) 78%,var(--muted));font-size:15.5px;line-height:1.72}.detail-block h4,.real-example h4{font-size:13px;text-transform:uppercase;letter-spacing:.09em;margin-bottom:8px;color:var(--ink)}.real-example{border-top:1px solid var(--line);padding:15px 0;background:linear-gradient(90deg,color-mix(in srgb,var(--soft) 76%,transparent),transparent);padding-left:14px;margin-top:4px;color:var(--muted)}.term-highlight{background:linear-gradient(transparent 58%, color-mix(in srgb,var(--orange) 34%, transparent) 0);font-weight:900;color:var(--ink);padding:0 .08em}.keywords span{color:var(--ink);border-color:color-mix(in srgb,var(--ink) 45%,var(--line));background:color-mix(in srgb,var(--soft) 76%,transparent)}.revision-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.revision-card{border:1px solid var(--ink);background:var(--card);padding:20px;min-height:350px;position:relative;overflow:hidden}.revision-card:before{content:"";position:absolute;right:-48px;top:-48px;width:128px;height:128px;border-radius:50%;background:var(--accent);opacity:.15}.revision-card span{display:inline-block;font-size:12px;font-weight:900;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);margin-bottom:14px}.revision-card h3{font-size:28px;line-height:1;letter-spacing:-.055em;margin-bottom:14px}.revision-card ul{padding-left:18px;color:color-mix(in srgb,var(--ink) 82%,var(--muted))}.revision-card li{margin:8px 0;line-height:1.55}.topic.open{box-shadow:var(--shadow)}.topic-body{font-size:15px}.points li{margin:9px 0}.example b{font-weight:900}.hero-copy{max-width:620px}.nav{gap:22px}.actions{gap:9px}.topic-head:hover{background:color-mix(in srgb,var(--soft) 72%,transparent)}
+@media(max-width:1120px){.revision-grid{grid-template-columns:repeat(2,1fr)}.header{height:auto;min-height:76px;padding-top:12px;padding-bottom:12px}.actions .btn{display:none}.hamb{display:grid!important}.hero-grid{gap:28px}.unit-section .section-title{gap:18px}.topic-title{font-size:25px}}
+@media(max-width:820px){.wrap{padding:0 16px}.hero{padding-top:42px}.hero-grid{grid-template-columns:1fr}.hero-art{max-width:520px}.meta-row{grid-template-columns:repeat(2,1fr)}.unit-grid{grid-template-columns:1fr 1fr}.unit-card{min-height:240px}.section,.unit-section{padding:46px 0}.topic-head{align-items:flex-start}.topic-action{min-width:70px}.points ul{columns:1}.table-wrap{margin-left:-4px;margin-right:-4px}.revision-grid{grid-template-columns:1fr}.searchbar{top:78px}.mobile-panel{overflow:auto}.mobile-panel a{font-size:32px}}
+@media(max-width:560px){.logo-sub{display:none}.logo{font-size:17px}.logo-mark{width:34px;height:34px}.header{padding-left:14px;padding-right:14px}.icon-btn{width:40px;height:40px}h1{font-size:clamp(56px,18vw,72px)}h2{font-size:clamp(40px,12vw,52px)}.hero-copy,.lead{font-size:16px}.cta .btn{width:100%;text-align:center}.meta-row,.unit-grid{grid-template-columns:1fr}.meta{border-right:0}.topic-head{display:grid;grid-template-columns:1fr auto;gap:14px;padding:16px}.topic-title{font-size:22px;line-height:1.05}.topic-body{padding:0 16px 20px}.definition{font-size:16px}.detail-block{font-size:15px}.unit-visual{height:130px}.unit-visual span{font-size:28px}.mobile-panel a{font-size:28px}.formula{grid-template-columns:1fr!important}.table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}table{min-width:620px}.back{right:16px;bottom:16px}}
+
+
+/* ===== FINAL POLISH FIXES: MENU, THEMES, VISUALS, META ALIGNMENT ===== */
+/* Remove yellow/marker-style highlight completely */
+.term-highlight{background:transparent!important;color:inherit!important;font-weight:inherit!important;padding:0!important;box-shadow:none!important}
+mark.term-highlight{background:transparent!important;color:inherit!important}
+.keywords span{background:transparent!important;color:var(--muted)!important;border-color:var(--line)!important}
+
+/* Cleaner header spacing and hamburger visibility */
+.header{min-height:76px;height:auto;gap:18px}
+.actions{flex-shrink:0}.hamb{display:grid!important;place-items:center;line-height:1;font-size:21px}
+.icon-btn.hamb{background:transparent!important;color:var(--ink)!important;border-color:var(--ink)!important}
+.icon-btn.hamb:hover{background:var(--ink)!important;color:var(--paper)!important}
+
+/* Fullscreen hamburger menu: same theme, readable in both light and dark */
+.mobile-panel{background:var(--paper)!important;color:var(--ink)!important;border-bottom:1px solid var(--line);overflow:auto;padding:28px clamp(18px,4vw,46px)!important}
+.mobile-top{margin-bottom:42px!important}
+.mobile-panel .logo{color:var(--ink)!important}.mobile-panel .logo-mark{background:var(--ink)!important;color:var(--paper)!important}
+.mobile-panel .icon-btn{color:var(--ink)!important;border-color:var(--ink)!important;background:transparent!important}
+.mobile-panel .icon-btn:hover{background:var(--ink)!important;color:var(--paper)!important}
+.mobile-panel a{display:grid!important;grid-template-columns:minmax(54px,120px) 1fr;align-items:center;justify-content:start!important;gap:clamp(16px,5vw,48px);font-size:clamp(34px,6.8vw,76px)!important;line-height:.9;text-align:left!important;color:var(--ink)!important;border-bottom:1px solid var(--line)!important;padding:22px 0!important;letter-spacing:-.07em}
+.mobile-panel a span{font-size:clamp(12px,1.4vw,16px)!important;letter-spacing:.16em!important;text-transform:uppercase;color:var(--muted)!important;font-weight:900!important;text-align:left!important}
+.mobile-panel a:hover{color:var(--orange)!important}
+.mobile-action-btn{border:1px solid var(--ink)!important;color:var(--ink)!important;background:transparent!important;border-radius:999px;padding:14px 18px;font-size:13px;font-weight:900;text-transform:uppercase;letter-spacing:.08em}
+.mobile-action-btn:hover{background:var(--ink)!important;color:var(--paper)!important}
+html[data-theme="dark"] .mobile-panel{background:#0b0d12!important;color:#f4f1e8!important;border-bottom-color:#2b2b2b}
+html[data-theme="dark"] .mobile-panel a{color:#f4f1e8!important;border-bottom-color:#2b2b2b!important}
+html[data-theme="dark"] .mobile-panel a span{color:#9aa1aa!important}
+html[data-theme="dark"] .mobile-panel .logo{color:#f4f1e8!important}
+html[data-theme="dark"] .mobile-panel .logo-mark{background:#f4f1e8!important;color:#0b0d12!important}
+html[data-theme="dark"] .mobile-panel .icon-btn,html[data-theme="dark"] .mobile-action-btn{color:#f4f1e8!important;border-color:#f4f1e8!important}
+html[data-theme="dark"] .mobile-panel .icon-btn:hover,html[data-theme="dark"] .mobile-action-btn:hover{background:#f4f1e8!important;color:#0b0d12!important}
+
+/* Unit/hero visuals: readable contrast in dark and light */
+.hero-art,.unit-visual{border-radius:0;isolation:isolate}
+.hero-art:before,.unit-visual:before{z-index:0}.hero-art svg,.hero-art-content,.score,.unit-visual span{z-index:1}
+.unit-visual span,.hero-art h2,.hero-art p{position:relative;text-shadow:0 2px 18px rgba(0,0,0,.38)}
+html[data-theme="dark"] .unit-visual{background:#12151c!important;color:#fff!important;border-color:#f4f1e8!important}
+html[data-theme="dark"] .unit-visual:before{background:radial-gradient(circle at 15% 12%,var(--accent),transparent 32%),radial-gradient(circle at 80% 80%,rgba(255,255,255,.28),transparent 28%),linear-gradient(135deg,rgba(255,255,255,.08),transparent)!important;opacity:.62!important;filter:blur(14px)!important}
+html[data-theme="dark"] .unit-visual span{color:#fff!important;text-shadow:0 3px 20px rgba(0,0,0,.75),0 0 1px #000!important}
+html[data-theme="light"] .unit-visual{background:#111!important;color:#fff!important}
+html[data-theme="light"] .unit-visual span{color:#fff!important;text-shadow:0 3px 18px rgba(0,0,0,.72)!important}
+html[data-theme="dark"] .hero-art-content{background:linear-gradient(transparent,rgba(0,0,0,.88))!important}
+html[data-theme="dark"] .hero-art h2,html[data-theme="dark"] .hero-art p{color:#fff!important;text-shadow:0 3px 20px rgba(0,0,0,.8)!important}
+
+/* Exam meta alignment fix */
+.meta-row{display:grid!important;grid-template-columns:repeat(4,minmax(0,1fr))!important;border-top:1px solid var(--line);border-bottom:1px solid var(--line);align-items:stretch;background:color-mix(in srgb,var(--paper) 92%,var(--card));}
+.meta{min-height:118px;padding:24px 26px!important;border-right:1px solid var(--line);display:flex;flex-direction:column;justify-content:center;align-items:flex-start;text-align:left}
+.meta:last-child{border-right:0}.meta small{margin-bottom:10px!important}.meta b{font-size:clamp(24px,2.2vw,34px)!important;line-height:1.05;white-space:nowrap}
+
+/* Better tablet/mobile meta and header */
+@media(max-width:1120px){.nav{display:none!important}.header{min-height:72px}.mobile-panel a{grid-template-columns:82px 1fr}.meta-row{grid-template-columns:repeat(2,minmax(0,1fr))!important}.meta:nth-child(2){border-right:0}.meta{min-height:104px}}
+@media(max-width:680px){.header{min-height:66px}.mobile-panel{padding:22px 18px!important}.mobile-panel a{grid-template-columns:58px 1fr;font-size:clamp(30px,10vw,52px)!important;padding:18px 0!important}.mobile-actions{gap:10px}.meta-row{grid-template-columns:1fr!important}.meta{border-right:0!important;border-bottom:1px solid var(--line);min-height:92px;padding:20px 0!important}.meta:last-child{border-bottom:0}.meta b{white-space:normal}.unit-visual span{font-size:26px!important}}
+
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<header class="header">
+<a class="logo" href="#home"><span class="logo-mark">AK</span><span><span>Ashish</span><div class="logo-sub">Business Ethics</div></span></a>
+<nav class="nav" id="nav"><a href="#unit1">Unit I</a><a href="#unit2">Unit II</a><a href="#unit3">Unit III</a><a href="#unit4">Unit IV</a><a href="#quick-revision">Quick Revision</a><a href="#formula">Formula</a></nav>
+<div class="actions"><button class="btn" onclick="toggleSearch()">Search</button><button class="btn" id="themeBtn" onclick="toggleTheme()">Dark Mode</button><button aria-label="Open menu" class="icon-btn hamb" onclick="openMenu()">☰</button></div>
+</header>
+<div class="mobile-panel" id="mobilePanel">
+<div class="mobile-top"><div class="logo"><span class="logo-mark" style="background:#fff;color:#000">AK</span><span>Ashish</span></div><button class="icon-btn" onclick="closeMenu()" style="color:#fff;border-color:#fff">×</button></div>
+<a href="#unit1" onclick="closeMenu()"><span>01</span> Unit I</a>
+<a href="#unit2" onclick="closeMenu()"><span>02</span> Unit II</a>
+<a href="#unit3" onclick="closeMenu()"><span>03</span> Unit III</a>
+<a href="#unit4" onclick="closeMenu()"><span>04</span> Unit IV</a>
+
+<a href="#quick-revision" onclick="closeMenu()"><span>Revise</span> Quick Revision</a><a href="#formula" onclick="closeMenu()"><span>Answer</span> Formula</a>
+<div class="mobile-actions"><button class="mobile-action-btn" onclick="toggleSearch();closeMenu()">Search Notes</button><button class="mobile-action-btn" onclick="toggleTheme();closeMenu()">Change Theme</button></div></div>
+<div class="searchbar" id="searchbar"><input id="searchInput" oninput="searchNotes(this.value)" placeholder="Search topics: ethics, morals, leadership, IT..."/><div class="results" id="results"></div></div>
+<main class="wrap" id="home">
+<section class="hero">
+<div class="kicker">B23-VAC-401 · Semester IV · VAC-4</div>
+<div class="hero-grid"><div>
+<h1>Business <span class="serif">Ethics</span> Exam Notes</h1>
+<p class="hero-copy">Complete unit-wise content in easy language. Clean minimal design, full exam coverage, and quick navigation for focused study.</p>
+<div class="cta"><a class="btn" href="#unit1">Start Unit I</a><a class="btn" href="#quick-revision">Quick Revision</a><button class="btn" onclick="toggleSearch()">Search Notes</button></div>
+</div><div aria-label="Business ethics visual" class="hero-art">
+<div class="score">35</div>
+<svg fill="none" viewbox="0 0 500 500"><path d="M90 256C148 112 327 82 408 218C462 309 399 416 292 420C163 424 45 342 90 256Z" stroke="white" stroke-width="2"></path><circle cx="250" cy="250" r="82" stroke="white" stroke-width="2"></circle><path d="M250 168v164M168 250h164" stroke="white" stroke-width="2"></path><path d="M152 162h196v214H152z" stroke="white" stroke-width="2"></path><path d="M186 376V238h42v138M273 376V202h42v174" stroke="white" stroke-width="2"></path></svg>
+<div class="hero-art-content"><h2>Complete Notes</h2><p>4 Units · Easy Language · Examples · 7-Mark Angles</p></div>
+</div></div>
+</section>
+<div class="meta-row"><div class="meta"><small>End Term</small><b>35 Marks</b></div><div class="meta"><small>Duration</small><b>3 Hours</b></div><div class="meta"><small>Syllabus</small><b>4 Units</b></div><div class="meta"><small>Format</small><b>Easy Notes</b></div></div>
+<section class="section" id="units"><div class="section-title"><div class="eyebrow">Study Map</div><div><h2>Four units, cleanly organised.</h2><p class="lead">Open any unit and study topic-wise content from the notes in easy exam language.</p></div></div><div class="unit-grid"><a class="unit-card blue" href="#unit1">
+<div class="unit-num">01</div>
+<h3>Introduction to Business Ethics</h3>
+<p>Foundation Unit</p>
+</a>
+<a class="unit-card purple" href="#unit2">
+<div class="unit-num">02</div>
+<h3>Organisational Ethics</h3>
+<p>Corporate Behaviour</p>
+</a>
+<a class="unit-card green" href="#unit3">
+<div class="unit-num">03</div>
+<h3>Workplace Ethics</h3>
+<p>Professional Conduct</p>
+</a>
+<a class="unit-card orange" href="#unit4">
+<div class="unit-num">04</div>
+<h3>Ethics in Functional Areas</h3>
+<p>Applied Business Ethics</p>
+</a></div></section>
+<section class="unit-section" id="unit1">
+<div class="section-title">
+<div><span class="eyebrow">01 · Foundation Unit</span><h2>Unit I — Introduction to Business Ethics</h2></div>
+<div class="unit-visual blue"><span>ETHICS</span></div>
+</div>
+<div class="subnav"><a href="#u1-meaning">Business Ethics</a><a href="#u1-ethics-morals">Ethics and Morals</a><a href="#u1-need">Need for Business Ethics</a><a href="#u1-types">Types of Business Ethics</a><a href="#u1-benefits">Benefits of Business Ethics</a><a href="#u1-principles">Principles of Business Ethics</a><a href="#u1-factors">Factors Affecting Business Ethics</a></div>
+<div class="topic-list"><article class="topic" data-search="Business Ethics — Meaning and Overview Business Ethics means applying moral principles and ethical standards to business decisions, policies and practices. It helps a business decide what is right and wrong while dealing with customers, employees, shareholders, government and society. Applied ethics Fairness Transparency Accountability Stakeholders Long-term success" id="u1-meaning">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Business Ethics — Meaning and Overview</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Business Ethics means applying moral principles and ethical standards to business decisions, policies and practices. It helps a business decide what is right and wrong while dealing with customers, employees, shareholders, government and society.</p></div>
+<div class="easy"><b>Easy Language:</b> In simple words, business ethics means doing business honestly, fairly and responsibly. It is not only about following law; it is also about doing what is morally right. Ethical businesses focus on long-term success, trust and social welfare instead of only short-term profit.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Business ethics studies the moral side of business activities. A business may earn profit, but the method of earning profit should be fair. For example, a company should not mislead customers, exploit employees, hide product defects or damage the environment only to increase sales. In exam answers, write that business ethics is wider than law because many actions can be legal but still morally wrong.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>It is a branch of applied ethics used in business life.</li>
+<li>It ensures fairness, transparency and accountability.</li>
+<li>It protects the interest of all stakeholders.</li>
+<li>It goes beyond legal compliance and includes moral responsibility.</li>
+<li>It supports long-term sustainable growth.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A company that clearly mentions product ingredients, correct price and safety information without misleading customers is following business ethics.</div>
+<div class="keywords"><span>Applied ethics</span><span>Fairness</span><span>Transparency</span><span>Accountability</span><span>Stakeholders</span><span>Long-term success</span></div>
+</div></article>
+<article class="topic" data-search="Ethics and Morals Ethics are systematic rules or standards that guide conduct in a group, profession or organization. Morals are personal beliefs about right and wrong developed through family, culture, religion, education and society. Ethics Morals Objective Subjective Professional standards Personal values" id="u1-ethics-morals">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Ethics and Morals</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Ethics are systematic rules or standards that guide conduct in a group, profession or organization. Morals are personal beliefs about right and wrong developed through family, culture, religion, education and society.</p></div>
+<div class="easy"><b>Easy Language:</b> Ethics are like professional rules. Morals are like your personal inner values. In business, ethics gives a framework to solve moral conflicts.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Ethics and morals are related but not exactly same. Ethics are formal standards accepted by a profession or organization, while morals come from personal conscience and social upbringing. In business, employees may have different personal morals, so organizations create ethical codes to bring consistency in decisions. This helps solve conflicts between personal interest and professional duty.</p></div>
+<div class="table-wrap"><table>
+<tr><th>Basis</th><th>Ethics</th><th>Morals</th></tr>
+<tr><td>Meaning</td><td>Rules and standards for conduct</td><td>Personal beliefs about right and wrong</td></tr>
+<tr><td>Nature</td><td>Objective, systematic and group-based</td><td>Subjective, personal and individual-based</td></tr>
+<tr><td>Source</td><td>Profession, organization, society, law</td><td>Family, culture, religion, education</td></tr>
+<tr><td>Application</td><td>Applies to groups and professions</td><td>Applies to individual behavior</td></tr>
+<tr><td>Example</td><td>A company code says no bribery</td><td>A person believes bribery is wrong</td></tr>
+</table></div>
+<div class="example"><b>Real-life example:</b> A manager may personally want to help a relative, but professional ethics require fair selection of suppliers based on merit.</div>
+<div class="keywords"><span>Ethics</span><span>Morals</span><span>Objective</span><span>Subjective</span><span>Professional standards</span><span>Personal values</span></div>
+</div></article>
+<article class="topic" data-search="Need for Business Ethics The need for business ethics arises because business decisions affect many stakeholders and must be conducted in a fair, transparent and socially responsible manner. Trust Consumer rights Employee welfare Legal risk CSR Sustainability Reputation" id="u1-need">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Need for Business Ethics</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>The need for business ethics arises because business decisions affect many stakeholders and must be conducted in a fair, transparent and socially responsible manner.</p></div>
+<div class="easy"><b>Easy Language:</b> Without ethics, companies may cheat customers, exploit employees, damage the environment or manipulate accounts. Ethics makes business trustworthy and safe for society.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Business ethics is required because business has power over customers, employees, investors and society. If companies act only for profit, they may use unfair advertisements, unsafe products, low wages or false accounts. Ethics protects stakeholders and creates a stable business environment. Long-term reputation is built when people believe the company is honest even in difficult situations.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Ensures fair business practices and prevents cheating, false advertising and price manipulation.</li>
+<li>Builds trust and credibility among customers, investors and society.</li>
+<li>Protects consumer rights such as right to safety, right to information and right to choice.</li>
+<li>Improves employee satisfaction through fair wages, safe conditions and equal opportunities.</li>
+<li>Reduces legal risks, fines and reputation loss.</li>
+<li>Supports long-term sustainability by balancing profit with social and environmental responsibility.</li>
+<li>Fulfills social responsibility through CSR, education, healthcare and environmental support.</li>
+<li>Maintains corporate image and goodwill.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A company that gives correct warranty, accurate product information and after-sales service protects consumer rights and builds trust.</div>
+<div class="answer"><h4>7-Mark Answer Angle</h4><p id="ans-u1-need">Business ethics is needed because modern organizations interact with customers, employees, investors, government and society. It ensures fair business practices, builds trust, protects consumers, improves employee motivation, reduces legal risk and supports long-term sustainability. For example, truthful advertising and fair pricing protect consumers, while safe working conditions protect employees. Ethical companies also perform CSR activities and maintain a positive reputation. Therefore, business ethics is both a moral duty and a business necessity.</p><button class="copy" onclick="copyFromId('ans-u1-need', this)">Copy Answer</button></div>
+<div class="keywords"><span>Trust</span><span>Consumer rights</span><span>Employee welfare</span><span>Legal risk</span><span>CSR</span><span>Sustainability</span><span>Reputation</span></div>
+</div></article>
+<article class="topic" data-search="Types of Business Ethics Different types of business ethics guide conduct at individual, professional, organizational, social, legal and environmental levels. Personal Professional Corporate Social Legal Environmental" id="u1-types">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Types of Business Ethics</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Different types of business ethics guide conduct at individual, professional, organizational, social, legal and environmental levels.</p></div>
+<div class="easy"><b>Easy Language:</b> Ethics is needed at many levels because business affects people, society, law and nature.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Each type of ethics works at a different level. Personal ethics controls individual behaviour, professional ethics controls conduct of professionals, corporate ethics controls the whole organization, social ethics focuses on society, legal ethics ensures compliance with law, and environmental ethics protects nature. A good business needs all these levels together.</p></div>
+<div class="table-wrap"><table>
+<tr><th>Type</th><th>Meaning</th><th>Example</th></tr>
+<tr><td>Personal Ethics</td><td>Moral values of an individual such as honesty and responsibility</td><td>Employee refuses to accept a bribe</td></tr>
+<tr><td>Professional Ethics</td><td>Standards prescribed by a profession</td><td>Chartered accountant maintains client confidentiality</td></tr>
+<tr><td>Corporate Ethics</td><td>Values and policies followed by the organization</td><td>Company follows anti-corruption policy</td></tr>
+<tr><td>Social Ethics</td><td>Responsibility toward society and community</td><td>Company supports education programs</td></tr>
+<tr><td>Legal Ethics</td><td>Obeying laws and regulations</td><td>Company pays taxes honestly</td></tr>
+<tr><td>Environmental Ethics</td><td>Responsibility toward nature and resources</td><td>Company uses renewable energy and eco-friendly packaging</td></tr>
+</table></div>
+<div class="keywords"><span>Personal</span><span>Professional</span><span>Corporate</span><span>Social</span><span>Legal</span><span>Environmental</span></div>
+</div></article>
+<article class="topic" data-search="Benefits of Business Ethics Business ethics benefits organizations, employees, customers and society by creating trust, reputation, legal safety and sustainable growth. Goodwill Loyalty Productivity Legal safety Financial performance Stakeholder relationship" id="u1-benefits">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Benefits of Business Ethics</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Business ethics benefits organizations, employees, customers and society by creating trust, reputation, legal safety and sustainable growth.</p></div>
+<div class="easy"><b>Easy Language:</b> Ethical business is not a loss. It increases trust, loyalty, productivity and long-term performance.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Business ethics gives both moral and practical benefits. Customers trust ethical brands, employees feel safe and motivated, investors prefer transparent companies and society supports responsible organizations. Ethical practices also reduce legal cases and scandals. Therefore, ethics becomes a competitive advantage, not just a moral lecture.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Enhances corporate image and reputation.</li>
+<li>Builds customer trust and loyalty.</li>
+<li>Increases employee satisfaction and productivity.</li>
+<li>Reduces legal problems, fines and lawsuits.</li>
+<li>Encourages long-term sustainability.</li>
+<li>Improves financial performance by attracting investors and skilled employees.</li>
+<li>Strengthens stakeholder relationships.</li>
+<li>Promotes social welfare through CSR and responsible action.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A company known for transparent dealings and social responsibility attracts loyal customers and investors.</div>
+<div class="keywords"><span>Goodwill</span><span>Loyalty</span><span>Productivity</span><span>Legal safety</span><span>Financial performance</span><span>Stakeholder relationship</span></div>
+</div></article>
+<article class="topic" data-search="Principles of Business Ethics Principles of business ethics are basic moral guidelines that help employees and organizations act fairly, honestly and responsibly. Accountability Respect Leadership Honesty Compliance Loyalty Environment Transparency Integrity Fairness Law" id="u1-principles">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Principles of Business Ethics</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Principles of business ethics are basic moral guidelines that help employees and organizations act fairly, honestly and responsibly.</p></div>
+<div class="easy"><b>Easy Language:</b> These principles are the rules of good business behavior. They help a company succeed legally and ethically.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Principles of business ethics act like a checklist for right conduct. Accountability tells employees to accept responsibility. Honesty prevents false claims. Transparency builds trust. Fairness prevents misuse of power. Respect for laws keeps the business safe. Environmental concern reminds companies that profit should not harm nature.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Accountability: accept responsibility for actions and decisions.</li>
+<li>Respect for others: respect dignity, rights, freedom and privacy of every person.</li>
+<li>Leadership: leaders should set good examples through ethical decisions.</li>
+<li>Honesty: speak truth and avoid false claims or selective omissions.</li>
+<li>Compliance with rules: follow company policies, industry standards and laws.</li>
+<li>Loyalty: protect confidential information and avoid conflicts of interest.</li>
+<li>Environmental concern: reduce pollution, waste and carbon emissions.</li>
+<li>Transparency: make relevant information and policies accessible.</li>
+<li>Integrity: keep promises, meet deadlines and act consistently.</li>
+<li>Fairness: treat everyone equally and never misuse power.</li>
+<li>Respect for laws: obey all local, state and national laws.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> If a product defect is found, an ethical company accepts responsibility, informs customers and recalls the product.</div>
+<div class="keywords"><span>Accountability</span><span>Respect</span><span>Leadership</span><span>Honesty</span><span>Compliance</span><span>Loyalty</span><span>Environment</span><span>Transparency</span><span>Integrity</span><span>Fairness</span><span>Law</span></div>
+</div></article>
+<article class="topic" data-search="Factors Affecting Business Ethics Business ethics is influenced by internal and external factors that shape how people and organizations make ethical or unethical decisions. Individual factors Culture Leadership Law Economic pressure Stakeholders Code of conduct" id="u1-factors">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Factors Affecting Business Ethics</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Business ethics is influenced by internal and external factors that shape how people and organizations make ethical or unethical decisions.</p></div>
+<div class="easy"><b>Easy Language:</b> People do not become ethical automatically. Their values, leaders, company culture, laws and pressure from society affect their behavior.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Ethical behaviour is shaped by both internal and external conditions. A person with strong values may act honestly, but a corrupt culture or pressure from seniors can still create problems. Similarly, strict laws, media pressure and customer awareness can force companies to behave responsibly. That is why ethical systems, leadership and policies are necessary.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Individual factors: personal values, beliefs, upbringing and education.</li>
+<li>Organizational culture: shared norms and values of the company.</li>
+<li>Leadership and management behavior: employees follow top management.</li>
+<li>Legal and regulatory environment: strict laws discourage fraud, bribery and exploitation.</li>
+<li>Economic environment: competition and financial crisis may create unethical pressure.</li>
+<li>Social and cultural environment: social values influence expectations from business.</li>
+<li>Stakeholder pressure: customers, investors, media and NGOs can force responsible behavior.</li>
+<li>Corporate policies and codes of conduct: clear policies reduce confusion and misconduct.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> If management rewards ethical employees and punishes misconduct, the organization develops a culture of integrity.</div>
+<div class="keywords"><span>Individual factors</span><span>Culture</span><span>Leadership</span><span>Law</span><span>Economic pressure</span><span>Stakeholders</span><span>Code of conduct</span></div>
+</div></article></div>
+</section>
+<section class="unit-section" id="unit2">
+<div class="section-title">
+<div><span class="eyebrow">02 · Corporate Behaviour</span><h2>Unit II — Organisational Ethics</h2></div>
+<div class="unit-visual purple"><span>LEADERSHIP</span></div>
+</div>
+<div class="subnav"><a href="#u2-org">Organisational Ethics</a><a href="#u2-ecb">Ethical Corporate Behaviour</a><a href="#u2-development">Development of Ethical Corporate Behaviour</a><a href="#u2-leadership">Ethical Leadership</a><a href="#u2-morals-values">Concept of Morals and Values</a><a href="#u2-moral-issues">Moral Issues in Business</a><a href="#u2-dilemmas">Ethical Dilemmas in Organisation</a></div>
+<div class="topic-list"><article class="topic" data-search="Organisational Ethics Organisational Ethics is the system of moral values, principles and standards that guide the behavior of individuals and groups within an organization. Code of conduct Corporate policies Ethical leadership Culture Integrity Trust" id="u2-org">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Organisational Ethics</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Organisational Ethics is the system of moral values, principles and standards that guide the behavior of individuals and groups within an organization.</p></div>
+<div class="easy"><b>Easy Language:</b> It decides how employees, managers and leaders should behave while performing duties. It makes business decisions legally correct, morally right and socially responsible.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Organisational ethics creates the moral framework of a company. It explains what behaviour is acceptable and unacceptable for employees, managers and leaders. It includes written rules, company culture and leadership behaviour. When organisational ethics is strong, people know how to act in difficult situations without depending only on personal judgement.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Includes codes of conduct, corporate policies, ethical leadership and organizational culture.</li>
+<li>Promotes integrity and honesty.</li>
+<li>Ensures fair treatment of employees.</li>
+<li>Builds trust among stakeholders.</li>
+<li>Prevents corruption and misconduct.</li>
+<li>Maintains corporate reputation.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A company with a clear code of conduct against bribery, discrimination and fraud is practicing organisational ethics.</div>
+<div class="keywords"><span>Code of conduct</span><span>Corporate policies</span><span>Ethical leadership</span><span>Culture</span><span>Integrity</span><span>Trust</span></div>
+</div></article>
+<article class="topic" data-search="Ethical Corporate Behaviour Ethical Corporate Behaviour means the conduct of an organization in a responsible, honest, fair and transparent manner while dealing with all stakeholders. Transparency Accountability Fairness Honesty CSR Compliance" id="u2-ecb">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Ethical Corporate Behaviour</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Ethical Corporate Behaviour means the conduct of an organization in a responsible, honest, fair and transparent manner while dealing with all stakeholders.</p></div>
+<div class="easy"><b>Easy Language:</b> It is the practical action of organisational ethics. Organisational ethics gives values; ethical corporate behaviour shows those values in daily business.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Ethical corporate behaviour is organisational ethics in action. A company may write values on paper, but those values matter only when they are followed in real decisions. For example, being transparent in financial reports, treating employees fairly and accepting responsibility for product defects are signs of ethical corporate behaviour.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Transparency: truthful information about finance, policies and activities.</li>
+<li>Accountability: accepting responsibility for decisions and outcomes.</li>
+<li>Fair treatment of employees: equal opportunity, fair wages and safe conditions.</li>
+<li>Honesty in dealings: no false advertising, fraud, bribery or corruption.</li>
+<li>CSR: contribution to community and environment.</li>
+<li>Compliance with laws: follow taxation, labour, environment and governance laws.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> If a product defect harms customers, an ethical company recalls the product and compensates customers.</div>
+<div class="keywords"><span>Transparency</span><span>Accountability</span><span>Fairness</span><span>Honesty</span><span>CSR</span><span>Compliance</span></div>
+</div></article>
+<article class="topic" data-search="Development of Ethical Corporate Behaviour Development of ethical corporate behaviour is a continuous process through which an organization builds a moral culture using clear policies, leadership, training and control systems. Code of ethics Training Internal control Whistleblower Reward Discipline Culture" id="u2-development">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Development of Ethical Corporate Behaviour</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Development of ethical corporate behaviour is a continuous process through which an organization builds a moral culture using clear policies, leadership, training and control systems.</p></div>
+<div class="easy"><b>Easy Language:</b> Ethical behaviour does not come automatically. It has to be built by leaders, rules, training and strict action against wrong practices.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Ethical corporate behaviour develops through repeated practice. A company first creates a code of ethics, then trains employees, monitors behaviour through audits, protects whistleblowers and rewards honest conduct. Leaders play the most important role because employees usually copy the behaviour of top management.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Establish a written code of ethics.</li>
+<li>Top management must show ethical leadership.</li>
+<li>Conduct ethical training and awareness programs.</li>
+<li>Create strong internal control systems like audits and compliance committees.</li>
+<li>Provide whistleblower protection so employees can report wrong acts safely.</li>
+<li>Reward ethical behaviour through recognition and appraisal.</li>
+<li>Enforce discipline for unethical conduct.</li>
+<li>Promote ethical organizational culture based on fairness, transparency and respect.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> An anonymous complaint system helps employees report corruption without fear of retaliation.</div>
+<div class="answer"><h4>7-Mark Answer Angle</h4><p id="ans-u2-development">Ethical corporate behaviour can be developed through a written code of ethics, ethical leadership, training programs, internal controls, whistleblower protection, rewards for ethical behaviour, strict discipline for misconduct and a culture of fairness and transparency. These steps help employees understand expectations and make responsible decisions. For example, regular audits prevent manipulation of accounts, while anti-corruption training creates awareness. Thus, ethical corporate behaviour is a continuous organization-wide process.</p><button class="copy" onclick="copyFromId('ans-u2-development', this)">Copy Answer</button></div>
+<div class="keywords"><span>Code of ethics</span><span>Training</span><span>Internal control</span><span>Whistleblower</span><span>Reward</span><span>Discipline</span><span>Culture</span></div>
+</div></article>
+<article class="topic" data-search="Ethical Leadership Ethical Leadership is leading by example according to moral principles such as integrity, fairness, honesty, accountability and social responsibility. Integrity Fairness Accountability Transparency Empathy Role model" id="u2-leadership">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Ethical Leadership</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Ethical Leadership is leading by example according to moral principles such as integrity, fairness, honesty, accountability and social responsibility.</p></div>
+<div class="easy"><b>Easy Language:</b> An ethical leader does not only talk about values; they show values through actions. Employees follow the behaviour of leaders.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Ethical leadership is important because leaders set the tone of the whole organization. If leaders take shortcuts, employees also justify unethical acts. But if leaders are honest, fair and accountable, employees feel pressure and motivation to behave ethically. Ethical leaders focus on both performance and values.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Integrity: consistent honesty in words and actions.</li>
+<li>Fairness: equal and just treatment for everyone.</li>
+<li>Accountability: taking responsibility for decisions.</li>
+<li>Transparency: open communication and truthful information.</li>
+<li>Empathy: understanding and respecting others.</li>
+<li>Humility: accepting mistakes and learning from them.</li>
+<li>Role-model behaviour: setting ethical standards through conduct.</li>
+<li>Social responsibility: considering impact on society.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A leader who refuses to use corruption for quick profit encourages employees to act honestly.</div>
+<div class="keywords"><span>Integrity</span><span>Fairness</span><span>Accountability</span><span>Transparency</span><span>Empathy</span><span>Role model</span></div>
+</div></article>
+<article class="topic" data-search="Concept of Morals and Values Morals are principles of right and wrong behaviour. Values are deeply held beliefs about what is important and guide decision-making. Morals Values Personal values Social values Organizational values" id="u2-morals-values">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Concept of Morals and Values</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Morals are principles of right and wrong behaviour. Values are deeply held beliefs about what is important and guide decision-making.</p></div>
+<div class="easy"><b>Easy Language:</b> Values shape morals. If a person values honesty, their moral action will be telling the truth.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Morals and values are the foundation of ethical behaviour. Values tell what is important, and morals tell what is right or wrong. For example, if an organization values transparency, its moral practice will be honest reporting. In business, shared values create a culture where ethical decisions become natural.</p></div>
+<div class="table-wrap"><table>
+<tr><th>Basis</th><th>Morals</th><th>Values</th></tr>
+<tr><td>Meaning</td><td>Principles of right and wrong</td><td>Beliefs about what is important</td></tr>
+<tr><td>Nature</td><td>Personal and judgement-based</td><td>Broader guiding principles</td></tr>
+<tr><td>Focus</td><td>Evaluate actions</td><td>Guide choices and priorities</td></tr>
+<tr><td>Example</td><td>Not cheating in exams</td><td>Believing honesty is important</td></tr>
+</table></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Morals are influenced by family, religion, culture, society and education.</li>
+<li>Types of values include personal, social and organizational values.</li>
+<li>Shared values create moral culture in organizations.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A company valuing transparency publishes accurate financial reports.</div>
+<div class="keywords"><span>Morals</span><span>Values</span><span>Personal values</span><span>Social values</span><span>Organizational values</span></div>
+</div></article>
+<article class="topic" data-search="Moral Issues in Business Moral issues arise when a business decision affects others and raises questions about right or wrong behaviour, especially when profit conflicts with ethical responsibility. Bribery False advertising Exploitation Pollution Price manipulation Fraud Discrimination Conflict of interest" id="u2-moral-issues">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Moral Issues in Business</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Moral issues arise when a business decision affects others and raises questions about right or wrong behaviour, especially when profit conflicts with ethical responsibility.</p></div>
+<div class="easy"><b>Easy Language:</b> When a company chooses between money and morality, a moral issue may arise.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Moral issues arise when business actions affect people and society. Many moral issues come from the conflict between profit and responsibility. For example, false advertising may increase sales but harms consumers. Financial fraud may attract investors temporarily but destroys trust later.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Bribery and corruption: offering money or gifts to influence decisions.</li>
+<li>False advertising: misleading consumers about product quality or benefits.</li>
+<li>Exploitation of employees: low wages, excessive hours or unsafe conditions.</li>
+<li>Environmental pollution: damaging air, water or land.</li>
+<li>Price manipulation: artificial shortages or unfair pricing.</li>
+<li>Financial fraud: manipulating records to show false profits.</li>
+<li>Workplace discrimination: unfair treatment based on gender, caste, religion, age or race.</li>
+<li>Conflict of interest: personal interest interfering with professional duty.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A manager awarding a contract to a family member instead of the best supplier is a conflict of interest.</div>
+<div class="keywords"><span>Bribery</span><span>False advertising</span><span>Exploitation</span><span>Pollution</span><span>Price manipulation</span><span>Fraud</span><span>Discrimination</span><span>Conflict of interest</span></div>
+</div></article>
+<article class="topic" data-search="Ethical Dilemmas in Organisation An ethical dilemma is a situation where a person must choose between two or more alternatives, and each option has both positive and negative moral consequences. Conflict of values Stakeholders Moral responsibility Profit vs society Truth vs confidentiality" id="u2-dilemmas">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Ethical Dilemmas in Organisation</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>An ethical dilemma is a situation where a person must choose between two or more alternatives, and each option has both positive and negative moral consequences.</p></div>
+<div class="easy"><b>Easy Language:</b> It is a difficult choice where there is no perfect answer. One ethical value may conflict with another.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>An ethical dilemma is more difficult than a normal ethical issue because both choices may have good and bad consequences. For example, laying off employees may save the company but harm families. Keeping everyone employed may protect workers but risk business failure. The decision-maker must balance values, stakeholders and long-term impact.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Conflict of values: two moral values clash.</li>
+<li>Difficult decision-making: no clear right or wrong answer.</li>
+<li>Impact on stakeholders: decision affects employees, customers, investors or society.</li>
+<li>Moral responsibility: decision-maker must consider ethical consequences.</li>
+<li>Common dilemmas: profit vs social responsibility, truth vs confidentiality, personal interest vs professional duty, layoffs vs employee welfare.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A company may know a product has a defect. Revealing it may reduce sales, but hiding it may mislead customers.</div>
+<div class="keywords"><span>Conflict of values</span><span>Stakeholders</span><span>Moral responsibility</span><span>Profit vs society</span><span>Truth vs confidentiality</span></div>
+</div></article></div>
+</section>
+<section class="unit-section" id="unit3">
+<div class="section-title">
+<div><span class="eyebrow">03 · Professional Conduct</span><h2>Unit III — Workplace Ethics</h2></div>
+<div class="unit-visual green"><span>WORKPLACE</span></div>
+</div>
+<div class="subnav"><a href="#u3-intro">Workplace Ethics</a><a href="#u3-factors">Factors Affecting Ethical Behaviour at Workplace</a><a href="#u3-issues">Ethical Issues at Workplace</a><a href="#u3-society">Role of Business Ethics in Building a Good Society</a></div>
+<div class="topic-list"><article class="topic" data-search="Workplace Ethics — Introduction Workplace Ethics refers to the moral principles, values and standards that guide the behaviour of employees and employers within an organization. Discipline Professionalism Respect Honesty Confidentiality Responsibility" id="u3-intro">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Workplace Ethics — Introduction</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Workplace Ethics refers to the moral principles, values and standards that guide the behaviour of employees and employers within an organization.</p></div>
+<div class="easy"><b>Easy Language:</b> It tells people how to behave professionally with colleagues, customers and management. It creates discipline, respect, honesty and a positive work environment.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Workplace ethics applies moral values to daily office behaviour. It includes punctuality, honesty, confidentiality, respect, fair treatment and responsibility. Good workplace ethics creates a positive environment where employees trust each other and focus on performance instead of politics, fear or unfairness.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Ensures discipline and professionalism.</li>
+<li>Promotes respect among employees.</li>
+<li>Encourages fair and honest behaviour.</li>
+<li>Creates a positive and safe work environment.</li>
+<li>Maintains confidentiality and responsibility.</li>
+<li>Improves trust, productivity and organizational performance.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> Being punctual, honest in reporting work and treating colleagues respectfully are examples of workplace ethics.</div>
+<div class="keywords"><span>Discipline</span><span>Professionalism</span><span>Respect</span><span>Honesty</span><span>Confidentiality</span><span>Responsibility</span></div>
+</div></article>
+<article class="topic" data-search="Factors Affecting Ethical Behaviour at Workplace Workplace ethical behaviour is influenced by leadership, culture, personal values, rewards, peers, policies, stress and legal rules. Leadership Culture Personal values Reward Peer pressure Policies Stress Law" id="u3-factors">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Factors Affecting Ethical Behaviour at Workplace</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Workplace ethical behaviour is influenced by leadership, culture, personal values, rewards, peers, policies, stress and legal rules.</p></div>
+<div class="easy"><b>Easy Language:</b> Employees act ethically when leaders set good examples, policies are clear and ethical behaviour is rewarded.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Workplace ethical behaviour depends on leadership, culture, personal values and pressure. If employees see unethical people being rewarded, they may also follow wrong practices. Clear policies, fair punishment and ethical role models help employees choose the right path even under stress.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Leadership and management behaviour strongly influence employees.</li>
+<li>Organizational culture can promote transparency or unethical shortcuts.</li>
+<li>Personal values of employees affect honesty and integrity.</li>
+<li>Reward and punishment system decides what behaviour is encouraged.</li>
+<li>Peer influence may create pressure to act ethically or unethically.</li>
+<li>Clear organizational policies and code of conduct reduce confusion.</li>
+<li>Work stress and unrealistic targets may push employees toward shortcuts.</li>
+<li>Legal and regulatory environment discourages misconduct.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> If a manager manipulates reports, employees may also start doing the same. If the manager acts honestly, employees are encouraged to act ethically.</div>
+<div class="keywords"><span>Leadership</span><span>Culture</span><span>Personal values</span><span>Reward</span><span>Peer pressure</span><span>Policies</span><span>Stress</span><span>Law</span></div>
+</div></article>
+<article class="topic" data-search="Ethical Issues at Workplace Ethical issues at workplace arise when actions affect others and raise questions about fairness, honesty, respect and responsibility. Business relationships Conflict of interest Fairness Honesty Communication Discrimination Harassment" id="u3-issues">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Ethical Issues at Workplace</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Ethical issues at workplace arise when actions affect others and raise questions about fairness, honesty, respect and responsibility.</p></div>
+<div class="easy"><b>Easy Language:</b> These are daily workplace problems where employees or managers must choose the fair and honest path.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Workplace ethical issues are practical problems faced in daily professional life. Conflict of interest, discrimination, harassment and false communication damage trust and morale. These issues also reduce productivity because employees feel unsafe or unfairly treated. Ethical workplaces solve these problems through clear policies and fair action.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Business Relationships: trust and fairness with customers, suppliers and colleagues.</li>
+<li>Conflict of Interest: personal interest interferes with professional responsibility.</li>
+<li>Fairness and Honesty: equal treatment and truthful conduct.</li>
+<li>Communication Ethics: clear, truthful and responsible communication.</li>
+<li>Discrimination: unfair treatment based on gender, caste, religion, age or other personal characteristics.</li>
+<li>Harassment: unwanted behaviour that creates a hostile or uncomfortable workplace.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> Promoting an employee because of personal friendship instead of merit is unfair and unethical.</div>
+<div class="keywords"><span>Business relationships</span><span>Conflict of interest</span><span>Fairness</span><span>Honesty</span><span>Communication</span><span>Discrimination</span><span>Harassment</span></div>
+</div></article>
+<article class="topic" data-search="Role of Business Ethics in Building a Good Society Business ethics helps build a good society by ensuring responsible conduct, fairness, consumer protection, employee welfare, environmental protection and social welfare. Fairness Consumer rights Employee welfare Environment Anti-corruption CSR Trust Sustainable development" id="u3-society">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Role of Business Ethics in Building a Good Society</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Business ethics helps build a good society by ensuring responsible conduct, fairness, consumer protection, employee welfare, environmental protection and social welfare.</p></div>
+<div class="easy"><b>Easy Language:</b> Businesses are part of society. If businesses act ethically, society becomes more fair, safe and trustworthy.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Business ethics helps society because companies affect jobs, prices, products, environment and public trust. Ethical companies protect consumers, provide fair wages, reduce pollution and support community welfare. When businesses avoid corruption and exploitation, the whole economic system becomes more trustworthy.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Promotes fairness and justice through no discrimination, equal opportunities and fair pricing.</li>
+<li>Protects consumer rights by safe products, right information and honest advertising.</li>
+<li>Ensures employee welfare through fair wages, safe conditions and dignity.</li>
+<li>Promotes environmental protection by reducing pollution and waste.</li>
+<li>Reduces corruption, fraud and exploitation.</li>
+<li>Encourages CSR such as education, healthcare and community development.</li>
+<li>Builds trust in companies, markets and economic systems.</li>
+<li>Supports sustainable development by balancing economic goals, social welfare and environment.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A company paying equal wages for equal work promotes social justice and equality.</div>
+<div class="answer"><h4>7-Mark Answer Angle</h4><p id="ans-u3-society">Business ethics plays a vital role in building a good society. It promotes fairness and justice by ensuring equal treatment, protects consumer rights through safe products and honest advertising, and improves employee welfare by providing fair wages and safe working conditions. It also promotes environmental protection, reduces corruption and encourages CSR activities like education and healthcare. Ethical businesses build public trust and support sustainable development by balancing profit, social welfare and environmental protection.</p><button class="copy" onclick="copyFromId('ans-u3-society', this)">Copy Answer</button></div>
+<div class="keywords"><span>Fairness</span><span>Consumer rights</span><span>Employee welfare</span><span>Environment</span><span>Anti-corruption</span><span>CSR</span><span>Trust</span><span>Sustainable development</span></div>
+</div></article></div>
+</section>
+<section class="unit-section" id="unit4">
+<div class="section-title">
+<div><span class="eyebrow">04 · Applied Business Ethics</span><h2>Unit IV — Ethics in Functional Areas</h2></div>
+<div class="unit-visual orange"><span>FUNCTIONS</span></div>
+</div>
+<div class="subnav"><a href="#u4-overview">Ethical Issues in Functional Areas</a><a href="#u4-marketing">Ethics in Marketing</a><a href="#u4-finance">Ethics in Finance</a><a href="#u4-hr">Ethics in Human Resource Management</a><a href="#u4-production">Ethics in Production</a><a href="#u4-it">Ethics in Information Technology</a><a href="#u4-gender">Gender Ethics</a></div>
+<div class="topic-list"><article class="topic" data-search="Ethical Issues in Functional Areas — Meaning Ethical issues in functional areas refer to moral problems or challenges that arise in different departments such as marketing, finance, HR, production, IT and gender-related workplace decisions. Functional areas Transparency Fairness Accountability Profit vs ethics" id="u4-overview">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Ethical Issues in Functional Areas — Meaning</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Ethical issues in functional areas refer to moral problems or challenges that arise in different departments such as marketing, finance, HR, production, IT and gender-related workplace decisions.</p></div>
+<div class="easy"><b>Easy Language:</b> Every department can face ethical problems because each department makes decisions that affect stakeholders.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Functional area ethics means applying ethics separately in each department because every department has different risks. Marketing may mislead customers, finance may manipulate accounts, HR may discriminate, production may ignore safety, IT may misuse data and gender ethics may be violated through unequal treatment.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Common concerns include misuse of power, lack of transparency, unfair practices and conflict between profit and ethics.</li>
+<li>Ethical conduct in all departments maintains integrity, fairness and accountability.</li>
+<li>Functional area ethics helps organizations avoid fraud, discrimination, unsafe products and misuse of data.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A marketing team making false claims, a finance team showing false profits, or an HR team discriminating in hiring are functional area ethical issues.</div>
+<div class="keywords"><span>Functional areas</span><span>Transparency</span><span>Fairness</span><span>Accountability</span><span>Profit vs ethics</span></div>
+</div></article>
+<article class="topic" data-search="Ethics in Marketing Marketing Ethics means applying moral principles to product promotion, pricing, advertising, customer communication and selling activities. Honest advertising Fair pricing Consumer protection Product claims Customer privacy" id="u4-marketing">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Ethics in Marketing</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Marketing Ethics means applying moral principles to product promotion, pricing, advertising, customer communication and selling activities.</p></div>
+<div class="easy"><b>Easy Language:</b> Marketing should not mislead customers. It should give correct information and protect consumer interests.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Marketing ethics protects consumers from manipulation. Advertisements should be truthful, pricing should be fair and product information should be accurate. A company must not exaggerate benefits, hide side effects, create fake scarcity or use emotional pressure on vulnerable consumers.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Avoid misleading advertisements and exaggerated claims.</li>
+<li>Avoid false claims about product quality, features or benefits.</li>
+<li>Avoid overpricing, hidden charges and price discrimination.</li>
+<li>Do not sell harmful, unsafe or low-quality products.</li>
+<li>Do not exploit vulnerable groups such as children or elderly customers.</li>
+<li>Respect consumer privacy and avoid misuse of customer data.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A company exaggerating product benefits in advertisements to attract customers is unethical marketing.</div>
+<div class="keywords"><span>Honest advertising</span><span>Fair pricing</span><span>Consumer protection</span><span>Product claims</span><span>Customer privacy</span></div>
+</div></article>
+<article class="topic" data-search="Ethics in Finance Financial Ethics means applying honesty, transparency and responsibility in managing funds, investments, accounting and financial reporting. Transparent accounting Financial fraud Insider trading Tax evasion Company funds Investor trust" id="u4-finance">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Ethics in Finance</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Financial Ethics means applying honesty, transparency and responsibility in managing funds, investments, accounting and financial reporting.</p></div>
+<div class="easy"><b>Easy Language:</b> Finance ethics prevents fraud and protects investors, banks and stakeholders from false information.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Finance ethics is very important because financial information influences investors, banks, employees and government. False accounts, insider trading, misuse of company funds and tax evasion may give short-term gain but can lead to scandals, penalties and loss of public trust.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Do not manipulate financial statements.</li>
+<li>Do not show false profits to attract investors.</li>
+<li>Avoid insider trading and misuse of confidential information.</li>
+<li>Avoid tax evasion.</li>
+<li>Do not misuse company funds.</li>
+<li>Provide accurate and transparent financial reports.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> Showing false profits to attract investors is unethical and illegal.</div>
+<div class="keywords"><span>Transparent accounting</span><span>Financial fraud</span><span>Insider trading</span><span>Tax evasion</span><span>Company funds</span><span>Investor trust</span></div>
+</div></article>
+<article class="topic" data-search="Ethics in Human Resource Management HR Ethics means applying moral principles in recruitment, training, compensation, promotion, performance appraisal and employee relations. Fair hiring Equal pay Harassment prevention Employee privacy Merit-based promotion" id="u4-hr">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Ethics in Human Resource Management</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>HR Ethics means applying moral principles in recruitment, training, compensation, promotion, performance appraisal and employee relations.</p></div>
+<div class="easy"><b>Easy Language:</b> HR ethics ensures employees are treated fairly and respectfully.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>HR ethics protects employees from unfair treatment. Recruitment, promotion, salary, appraisal and workplace safety should be based on merit and fairness. HR must prevent harassment, discrimination, nepotism and misuse of employee personal information.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Avoid discrimination in hiring and promotion.</li>
+<li>Provide fair wages and equal pay for equal work.</li>
+<li>Prevent workplace harassment.</li>
+<li>Respect employee privacy.</li>
+<li>Use transparent performance appraisal systems.</li>
+<li>Avoid nepotism and favoritism.</li>
+<li>Ensure safe and respectful working conditions.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> Rejecting a qualified candidate only because of gender or caste is unethical HR practice.</div>
+<div class="keywords"><span>Fair hiring</span><span>Equal pay</span><span>Harassment prevention</span><span>Employee privacy</span><span>Merit-based promotion</span></div>
+</div></article>
+<article class="topic" data-search="Ethics in Production Production Ethics means applying moral principles in manufacturing so that products are safe, reliable, high-quality and socially responsible. Quality Safety Raw materials Product defects Pollution Resource efficiency" id="u4-production">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Ethics in Production</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Production Ethics means applying moral principles in manufacturing so that products are safe, reliable, high-quality and socially responsible.</p></div>
+<div class="easy"><b>Easy Language:</b> A company should not reduce cost by using poor materials, ignoring safety or polluting the environment.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Production ethics focuses on product quality, safety and environmental responsibility. A company should not use cheap substandard material or skip safety checks to reduce cost. Ethical production ensures that products are safe for consumers and manufacturing does not harm workers or nature.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Maintain quality standards.</li>
+<li>Do not use substandard raw materials.</li>
+<li>Do not ignore product defects or reduce quality checks.</li>
+<li>Follow worker safety standards.</li>
+<li>Avoid environmental pollution from waste and chemicals.</li>
+<li>Use raw materials, energy and water efficiently.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> A construction company using poor-quality cement to reduce cost creates unsafe products and violates production ethics.</div>
+<div class="keywords"><span>Quality</span><span>Safety</span><span>Raw materials</span><span>Product defects</span><span>Pollution</span><span>Resource efficiency</span></div>
+</div></article>
+<article class="topic" data-search="Ethics in Information Technology IT Ethics means responsible and fair use of technology, data and information systems while protecting privacy, security and intellectual property. Data privacy Cybersecurity Cybercrime Intellectual property Digital surveillance AI bias" id="u4-it">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Ethics in Information Technology</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>IT Ethics means responsible and fair use of technology, data and information systems while protecting privacy, security and intellectual property.</p></div>
+<div class="easy"><b>Easy Language:</b> Organizations store huge amounts of data. Using or selling data without permission, hacking or misusing systems is unethical.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>IT ethics is becoming important because businesses collect and process large amounts of data. Misusing customer data, weak cybersecurity, hacking, piracy and biased algorithms can harm people. Ethical IT practices protect privacy, security and digital rights.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Protect data privacy and collect data with consent.</li>
+<li>Ensure data security against cyberattacks and breaches.</li>
+<li>Avoid cybercrime such as hacking, phishing and identity theft.</li>
+<li>Respect intellectual property; do not use pirated software or stolen digital content.</li>
+<li>Prevent misuse of technology and unauthorized access.</li>
+<li>Avoid excessive employee or user surveillance.</li>
+<li>Check algorithmic or AI bias that may harm groups unfairly.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> Selling customer data to advertisers without consent is an IT ethics violation.</div>
+<div class="keywords"><span>Data privacy</span><span>Cybersecurity</span><span>Cybercrime</span><span>Intellectual property</span><span>Digital surveillance</span><span>AI bias</span></div>
+</div></article>
+<article class="topic" data-search="Gender Ethics Gender Ethics means ensuring fair, equal and respectful treatment of all genders in society and the workplace. Equality Dignity Safe workplace Equal opportunity Anti-harassment Inclusiveness" id="u4-gender">
+<button aria-expanded="false" class="topic-head" onclick="toggleTopic(this)">
+<span class="topic-title">Gender Ethics</span>
+<span class="topic-action">Open</span>
+</button>
+<div class="topic-body">
+<div class="definition"><span>Definition</span><p>Gender Ethics means ensuring fair, equal and respectful treatment of all genders in society and the workplace.</p></div>
+<div class="easy"><b>Easy Language:</b> No person should be treated unfairly because of gender. Gender ethics promotes equality, dignity, safety and equal opportunities.</div><div class="detail-block"><h4>Detailed Explanation</h4><p>Gender ethics ensures that all people get equal dignity, opportunity and safety regardless of gender. It includes equal pay for equal work, fair promotions, maternity support, prevention of harassment and respectful workplace culture. Gender equality improves both justice and organizational performance.</p></div>
+<div class="points"><h4>Important Points</h4><ul>
+<li>Promote gender equality in hiring, pay, promotion and leadership.</li>
+<li>Remove gender discrimination and unconscious bias.</li>
+<li>Ensure safe and respectful workplace for all genders.</li>
+<li>Prevent sexual harassment and gender-based harassment.</li>
+<li>Provide equal employment opportunities.</li>
+<li>Respect human dignity and rights.</li>
+<li>Support work-life balance and inclusive policies.</li>
+</ul></div>
+<div class="example"><b>Real-life example:</b> Paying male and female employees equally for the same work is an example of gender ethics.</div>
+<div class="keywords"><span>Equality</span><span>Dignity</span><span>Safe workplace</span><span>Equal opportunity</span><span>Anti-harassment</span><span>Inclusiveness</span></div>
+</div></article></div>
+</section>
+<section class="section" id="quick-revision">
+<div class="section-title"><div class="eyebrow">Quick Revision</div><div><h2>Unit-wise quick revision notes.</h2><p class="lead">Short, high-value recap for each unit. Use this after reading detailed notes once.</p></div></div>
+<div class="revision-grid">
+<article class="revision-card blue"><span>Unit I</span><h3>Business Ethics Foundation</h3><ul><li><b>Business Ethics</b> means right and wrong in business decisions.</li><li><b>Ethics</b> are external rules; <b>Morals</b> are personal beliefs.</li><li>Need: trust, fairness, consumer protection, employee welfare, legal safety, CSR, reputation.</li><li>Types: personal, professional, corporate, social, legal and environmental ethics.</li><li>Principles: accountability, respect, honesty, compliance, loyalty, environmental concern, transparency, integrity, fairness and respect for laws.</li><li>Factors: individual values, culture, leadership, law, economy, society, stakeholders and code of conduct.</li></ul></article>
+<article class="revision-card purple"><span>Unit II</span><h3>Organisational Ethics</h3><ul><li><b>Organisational Ethics</b> guides employees, managers and leaders inside a company.</li><li><b>Ethical Corporate Behaviour</b> means honesty, fairness, transparency, accountability and CSR in action.</li><li>Development needs code of ethics, ethical leadership, training, audits, whistleblower protection, rewards and discipline.</li><li><b>Ethical Leadership</b> means leading by example with integrity, fairness and responsibility.</li><li><b>Moral Issues</b> include bribery, false advertising, exploitation, pollution, fraud, discrimination and conflict of interest.</li><li><b>Ethical Dilemma</b> means a tough choice where every option has moral consequences.</li></ul></article>
+<article class="revision-card green"><span>Unit III</span><h3>Workplace Ethics</h3><ul><li><b>Workplace Ethics</b> means honest, respectful and responsible conduct at work.</li><li>Factors: leadership, culture, personal values, reward system, peer pressure, policies, stress and law.</li><li>Key issues: business relationships, conflict of interest, fairness, honesty, communication, discrimination and harassment.</li><li><b>Conflict of Interest</b> happens when personal benefit affects professional duty.</li><li><b>Communication Ethics</b> means sharing truthful, clear and responsible information.</li><li>Business ethics builds society through fairness, consumer rights, employee welfare, environmental care, CSR and trust.</li></ul></article>
+<article class="revision-card orange"><span>Unit IV</span><h3>Functional Area Ethics</h3><ul><li><b>Marketing Ethics</b>: honest advertising, fair pricing and consumer protection.</li><li><b>Finance Ethics</b>: transparent accounts, no fraud, no insider trading and no misuse of funds.</li><li><b>HR Ethics</b>: fair hiring, equal pay, no harassment, merit-based promotion and employee privacy.</li><li><b>Production Ethics</b>: quality, safety, worker protection and pollution control.</li><li><b>IT Ethics</b>: data privacy, cybersecurity, intellectual property and responsible technology use.</li><li><b>Gender Ethics</b>: equality, dignity, equal opportunity and safe workplace.</li></ul></article>
+</div>
+</section>
+<section class="section" id="formula"><div class="section-title"><div class="eyebrow">Answer Style</div><div><h2>7-mark answer formula.</h2><p class="lead">Use this structure in every long answer for a clean, high-scoring presentation.</p></div></div><div class="formula"><div><b>1. Intro</b><p>Start with 2–3 lines introducing the topic.</p></div><div><b>2. Definition</b><p>Write a direct definition in simple language.</p></div><div><b>3. Points</b><p>Explain 6–8 points with headings.</p></div><div><b>4. Example</b><p>Add one business example wherever possible.</p></div><div><b>5. Close</b><p>End with a short conclusion.</p></div></div></section>
+<footer class="footer"><div><b>Ashish · Business Ethics Exam Notes</b></div><div>B23-VAC-401 · Semester IV · Complete Unit-wise Preparation</div></footer>
+</main>
+<button class="back" id="back" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+<script>
+const searchData = [{"unit": "01", "title": "Unit I \u2014 Introduction to Business Ethics", "id": "unit1"}, {"unit": "01", "title": "Business Ethics \u2014 Meaning and Overview", "id": "u1-meaning"}, {"unit": "01", "title": "Ethics and Morals", "id": "u1-ethics-morals"}, {"unit": "01", "title": "Need for Business Ethics", "id": "u1-need"}, {"unit": "01", "title": "Types of Business Ethics", "id": "u1-types"}, {"unit": "01", "title": "Benefits of Business Ethics", "id": "u1-benefits"}, {"unit": "01", "title": "Principles of Business Ethics", "id": "u1-principles"}, {"unit": "01", "title": "Factors Affecting Business Ethics", "id": "u1-factors"}, {"unit": "02", "title": "Unit II \u2014 Organisational Ethics", "id": "unit2"}, {"unit": "02", "title": "Organisational Ethics", "id": "u2-org"}, {"unit": "02", "title": "Ethical Corporate Behaviour", "id": "u2-ecb"}, {"unit": "02", "title": "Development of Ethical Corporate Behaviour", "id": "u2-development"}, {"unit": "02", "title": "Ethical Leadership", "id": "u2-leadership"}, {"unit": "02", "title": "Concept of Morals and Values", "id": "u2-morals-values"}, {"unit": "02", "title": "Moral Issues in Business", "id": "u2-moral-issues"}, {"unit": "02", "title": "Ethical Dilemmas in Organisation", "id": "u2-dilemmas"}, {"unit": "03", "title": "Unit III \u2014 Workplace Ethics", "id": "unit3"}, {"unit": "03", "title": "Workplace Ethics \u2014 Introduction", "id": "u3-intro"}, {"unit": "03", "title": "Factors Affecting Ethical Behaviour at Workplace", "id": "u3-factors"}, {"unit": "03", "title": "Ethical Issues at Workplace", "id": "u3-issues"}, {"unit": "03", "title": "Role of Business Ethics in Building a Good Society", "id": "u3-society"}, {"unit": "04", "title": "Unit IV \u2014 Ethics in Functional Areas", "id": "unit4"}, {"unit": "04", "title": "Ethical Issues in Functional Areas \u2014 Meaning", "id": "u4-overview"}, {"unit": "04", "title": "Ethics in Marketing", "id": "u4-marketing"}, {"unit": "04", "title": "Ethics in Finance", "id": "u4-finance"}, {"unit": "04", "title": "Ethics in Human Resource Management", "id": "u4-hr"}, {"unit": "04", "title": "Ethics in Production", "id": "u4-production"}, {"unit": "04", "title": "Ethics in Information Technology", "id": "u4-it"}, {"unit": "04", "title": "Gender Ethics", "id": "u4-gender"}, {"unit":"Revision","title":"Quick Revision Notes","id":"quick-revision"}];
+function openMenu(){document.getElementById('mobilePanel').classList.add('open')}
+function closeMenu(){document.getElementById('mobilePanel').classList.remove('open')}
+function toggleSearch(){const s=document.getElementById('searchbar');s.classList.toggle('open');if(s.classList.contains('open'))setTimeout(()=>document.getElementById('searchInput').focus(),80)}
+function toggleTheme(){const html=document.documentElement;const dark=html.getAttribute('data-theme')==='dark';html.setAttribute('data-theme',dark?'light':'dark');document.getElementById('themeBtn').textContent=dark?'Dark Mode':'Light Mode'}
+function toggleTopic(btn){const topic=btn.closest('.topic');topic.classList.toggle('open');btn.setAttribute('aria-expanded',topic.classList.contains('open')?'true':'false');topic.querySelector('.topic-action').textContent=topic.classList.contains('open')?'Close':'Open'}
+function copyFromId(id,btn){const el=document.getElementById(id);copyText(el.innerText,btn)}
+function copyText(text,btn){navigator.clipboard.writeText(text).then(()=>{const old=btn.textContent;btn.textContent='Copied';setTimeout(()=>btn.textContent=old,1400)})}
+function searchNotes(q){const results=document.getElementById('results');q=q.trim().toLowerCase();if(!q){results.style.display='none';results.innerHTML='';return} const matches=searchData.filter(x=>(x.title+x.unit).toLowerCase().includes(q)).slice(0,10);results.innerHTML=matches.length?matches.map(m=>`<div class="result" onclick="location.hash='${m.id}';toggleSearch();setTimeout(()=>document.getElementById('${m.id}')?.classList.add('open'),80)"><b>${m.title}</b><small>Unit ${m.unit}</small></div>`).join(''):'<div class="result"><b>No result found</b><small>Try another word</small></div>';results.style.display='block'}
+window.addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-innerHeight;document.getElementById('progress').style.width=(scrollY/max*100)+'%';document.getElementById('back').classList.toggle('show',scrollY>500);const sections=[...document.querySelectorAll('.unit-section,#quick-revision,#formula')];let current='';sections.forEach(s=>{if(scrollY>=s.offsetTop-140)current=s.id});document.querySelectorAll('.nav a').forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+current))})
+document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.getElementById('searchbar').classList.remove('open');closeMenu()}})
+// open first topic in each unit for easy start
+for(const id of ['unit1','unit2','unit3','unit4']){const t=document.querySelector('#'+id+' .topic'); if(t) t.classList.add('open')}
+
+// Important term highlighter removed as requested.
+
+
+</script>
+</body>
+</html>
